@@ -1,6 +1,6 @@
 from zeep import Client
 
-client = Client('http://localhost:55824/services/serviceagent.asmx?WSDL')
+client = Client('https://sys.mailworx.info/services/serviceagent.asmx?WSDL')
 
 factory = client.type_factory('ns0')
 securityContext = factory.SecurityContext(Username="[Username]", Password="[Password]", Account="[Account]", Source="[Source]")
